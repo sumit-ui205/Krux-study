@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="YOUR_CODE" />
+    <title>KRUX STUDY — Study Smart. Achieve More.</title>
+    <meta
+      name="description"
+      content="Organize your studies, manage focus sessions, track exams, calculate grades and CGPA, and store notes privately in your browser with KRUX STUDY."
+    />
+    <link rel="canonical" href="https://kruxstudy.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KRUX STUDY" />
+    <meta property="og:title" content="KRUX STUDY — Study Smart. Achieve More." />
+    <meta
+      property="og:description"
+      content="Ten fast, lightweight academic productivity tools that run directly in your browser with zero accounts or clutter."
+    />
+    <meta property="og:url" content="https://kruxstudy.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KRUX STUDY — Study Smart. Achieve More." />
+    <meta
+      name="twitter:description"
+      content="Ten fast, lightweight academic productivity tools that run directly in your browser."
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/logo.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "KRUX STUDY",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "All",
+        "description": "Lightweight student productivity suite featuring a Study Planner, Focus Timer, Exam Countdown, Grade, Percentage, Attendance and CGPA Calculators, Assignment Tracker, Word Counter, and Notes Organizer.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="KRUX STUDY Home">
+          <img
+            src="./assets/icons/logo.svg"
+            alt=""
+            width="28"
+            height="28"
+            class="brand-mark"
+          />
+          <span>KRUX <span class="brand-accent">STUDY</span></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="./index.html" class="nav-link" aria-current="page">Home</a>
+          <a href="#tools" class="nav-link">Explore Tools</a>
+          <a href="#why" class="nav-link">Why KRUX</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="./tools/planner.html" class="btn btn-primary btn-sm header-cta">Get Started</a>
+          <button
+            type="button"
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Open navigation menu"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="./index.html" class="mobile-nav-link" aria-current="page">Home</a></li>
+        <li><a href="#tools" class="mobile-nav-link">Explore Tools</a></li>
+        <li><a href="#why" class="mobile-nav-link">Why KRUX</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#privacy" class="mobile-nav-link">Privacy Policy</a></li>
+      </ul>
+      <a href="./tools/planner.html" class="btn btn-primary mobile-nav-cta">Get Started</a>
+    </nav>
+
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div>
+            <p class="hero-tagline">Study Smart. Achieve More.</p>
+            <h1 id="hero-heading" class="hero-title">
+              Your Study Life, <span class="hero-title-accent">Simplified.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Powerful everyday tools to organize your studies, manage your time and stay ahead.
+            </p>
+            <div class="hero-actions">
+              <a href="#tools" class="btn btn-primary">Explore Tools</a>
+              <a href="./tools/planner.html" class="btn btn-secondary">Get Started</a>
+            </div>
+            <div class="hero-meta">
+              <span>10 Everyday Tools</span>
+              <span class="hero-meta-sep" aria-hidden="true">·</span>
+              <span>Instant Local Storage</span>
+              <span class="hero-meta-sep" aria-hidden="true">·</span>
+              <span>No Sign-Up Needed</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <svg
+              class="hero-artwork"
+              viewBox="0 0 480 480"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Abstract glowing neon green energy orb with flowing digital waves and geometric hourglass"
+            >
+              <defs>
+                <radialGradient id="kruxOrbGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#A3FF00" stop-opacity="0.34" />
+                  <stop offset="38%" stop-color="#A3FF00" stop-opacity="0.12" />
+                  <stop offset="72%" stop-color="#A3FF00" stop-opacity="0.03" />
+                  <stop offset="100%" stop-color="#080808" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="kruxCore" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16" />
+                  <stop offset="55%" stop-color="#A3FF00" stop-opacity="0.14" />
+                  <stop offset="100%" stop-color="#080808" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="waveStroke" x1="0%" y1="50%" x2="100%" y2="50%">
+                  <stop offset="0%" stop-color="#A3FF00" stop-opacity="0" />
+                  <stop offset="30%" stop-color="#A3FF00" stop-opacity="0.55" />
+                  <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.7" />
+                  <stop offset="70%" stop-color="#A3FF00" stop-opacity="0.55" />
+                  <stop offset="100%" stop-color="#A3FF00" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="waveStrokeMuted" x1="0%" y1="50%" x2="100%" y2="50%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.22" />
+                  <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="hourglassSand" x1="50%" y1="0%" x2="50%" y2="100%">
+                  <stop offset="0%" stop-color="#A3FF00" stop-opacity="0.85" />
+                  <stop offset="100%" stop-color="#A3FF00" stop-opacity="0.22" />
+                </linearGradient>
+              </defs>
+
+              <!-- Ambient Glowing Energy Orb -->
+              <circle class="orb-pulse" cx="240" cy="240" r="215" fill="url(#kruxOrbGlow)" />
+              <circle cx="240" cy="240" r="168" stroke="#222222" stroke-width="1" />
+              <circle cx="240" cy="240" r="136" stroke="#2B2B2B" stroke-width="1" stroke-dasharray="3 7" />
+              <circle class="orb-pulse" cx="240" cy="240" r="108" fill="url(#kruxCore)" stroke="#A3FF00" stroke-opacity="0.45" stroke-width="1.2" />
+
+              <!-- Subtle Flowing Digital Waves -->
+              <g class="wave-flow">
+                <path
+                  d="M24 252 C92 214, 152 288, 240 240 C328 192, 388 266, 456 228"
+                  stroke="url(#waveStroke)"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M24 274 C104 236, 166 306, 240 262 C314 218, 376 286, 456 248"
+                  stroke="url(#waveStrokeMuted)"
+                  stroke-width="1.1"
+                />
+              </g>
+              <g class="wave-flow-alt">
+                <path
+                  d="M24 226 C100 264, 162 194, 240 240 C318 286, 380 216, 456 254"
+                  stroke="url(#waveStroke)"
+                  stroke-width="1.2"
+                  stroke-opacity="0.65"
+                />
+                <path
+                  d="M36 206 C116 244, 174 176, 240 218 C306 260, 364 196, 444 232"
+                  stroke="url(#waveStrokeMuted)"
+                  stroke-width="1"
+                />
+              </g>
+
+              <!-- Minimalist Architectural Hourglass Centerpiece -->
+              <g>
+                <!-- Top and bottom precision rails -->
+                <line x1="186" y1="138" x2="294" y2="138" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+                <line x1="186" y1="342" x2="294" y2="342" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+                <line x1="202" y1="128" x2="278" y2="128" stroke="#A3FF00" stroke-opacity="0.55" stroke-width="1.2" stroke-linecap="round" />
+                <line x1="202" y1="352" x2="278" y2="352" stroke="#A3FF00" stroke-opacity="0.55" stroke-width="1.2" stroke-linecap="round" />
+
+                <!-- Outer glass silhouette -->
+                <path
+                  d="M198 138 V174 C198 202, 232 224, 236 240 C232 256, 198 278, 198 306 V342"
+                  stroke="#FFFFFF"
+                  stroke-opacity="0.9"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M282 138 V174 C282 202, 248 224, 244 240 C248 256, 282 278, 282 306 V342"
+                  stroke="#FFFFFF"
+                  stroke-opacity="0.9"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+
+                <!-- Upper sand chamber -->
+                <path
+                  d="M210 186 H270 C264 205, 246 222, 240 234 C234 222, 216 205, 210 186 Z"
+                  fill="url(#hourglassSand)"
+                />
+
+                <!-- Lower accumulated energy mound -->
+                <path
+                  d="M208 336 C214 314, 230 302, 240 296 C250 302, 266 314, 272 336 Z"
+                  fill="url(#hourglassSand)"
+                />
+
+                <!-- Precision center neck & falling sand particles -->
+                <line x1="240" y1="244" x2="240" y2="294" stroke="#A3FF00" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="2 4" />
+                <circle class="sand-drop" cx="240" cy="256" r="2.5" fill="#A3FF00" />
+                <circle cx="240" cy="240" r="3" fill="#FFFFFF" />
+              </g>
+
+              <!-- Cardinal orbital markers -->
+              <circle cx="240" cy="72" r="3" fill="#A3FF00" />
+              <circle cx="240" cy="408" r="2.5" fill="#555555" />
+              <circle cx="72" cy="240" r="2.5" fill="#555555" />
+              <circle cx="408" cy="240" r="3" fill="#A3FF00" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR TOOLS SECTION -->
+      <section id="tools" class="section" aria-labelledby="tools-heading">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-heading-group">
+              <h2 id="tools-heading" class="section-title">Popular Tools</h2>
+              <p class="section-subtitle">
+                Ten focused academic tools built for daily planning, study sessions, and instant calculations.
+              </p>
+            </div>
+
+            <div id="tool-filter-bar" class="filter-bar" role="group" aria-label="Filter tools by category">
+              <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All Tools</button>
+              <button type="button" class="filter-btn" data-filter="planning" aria-pressed="false">Planning</button>
+              <button type="button" class="filter-btn" data-filter="calculators" aria-pressed="false">Calculators</button>
+              <button type="button" class="filter-btn" data-filter="writing" aria-pressed="false">Focus &amp; Notes</button>
+            </div>
+          </div>
+
+          <div id="tools-grid" class="tools-grid">
+            <!-- 01. Study Planner (Featured) -->
+            <a href="./tools/planner.html" class="tool-card tool-card--featured" data-category="planning">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                      <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">01</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Study Planner</h3>
+                  <p class="tool-card-desc">
+                    Organize subjects, schedule daily study tasks with dates and times, and check off progress.
+                  </p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Study Planner</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 02. Focus Timer (Featured) -->
+            <a href="./tools/timer.html" class="tool-card tool-card--featured" data-category="writing">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="13" r="8" />
+                      <path d="M12 9v4l2.5 1.5" />
+                      <path d="M9 2h6" />
+                      <path d="M12 2v3" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">02</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Focus Timer</h3>
+                  <p class="tool-card-desc">
+                    Customizable deep-work study timer with structured break intervals and drift-free background tracking.
+                  </p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Focus Timer</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 03. Exam Countdown -->
+            <a href="./tools/countdown.html" class="tool-card" data-category="planning">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 2h14" />
+                      <path d="M5 22h14" />
+                      <path d="M7 2v4.5a5 5 0 0 0 2.2 4.1L12 12l2.8-1.4A5 5 0 0 0 17 6.5V2" />
+                      <path d="M7 22v-4.5a5 5 0 0 1 2.2-4.1L12 12l2.8 1.4a5 5 0 0 1 2.2 4.1V22" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">03</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Exam Countdown</h3>
+                  <p class="tool-card-desc">Track multiple upcoming exam dates with live remaining day counts.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 04. Grade Calculator -->
+            <a href="./tools/grade.html" class="tool-card" data-category="calculators">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9 5.5-.8L12 3z" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">04</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Grade Calculator</h3>
+                  <p class="tool-card-desc">Convert marks and maximum scores into percentages and letter grades.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 05. Percentage Calculator -->
+            <a href="./tools/percentage.html" class="tool-card" data-category="calculators">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="19" y1="5" x2="5" y2="19" />
+                      <circle cx="6.5" cy="6.5" r="2.5" />
+                      <circle cx="17.5" cy="17.5" r="2.5" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">05</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Percentage Calculator</h3>
+                  <p class="tool-card-desc">Compute marks percentages, percentage increases, and decreases cleanly.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 06. Attendance Calculator -->
+            <a href="./tools/attendance.html" class="tool-card" data-category="calculators">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <polyline points="16 11 18 13 22 9" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">06</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Attendance Calculator</h3>
+                  <p class="tool-card-desc">Check current attendance and see how many classes are needed for your target.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 07. CGPA Calculator -->
+            <a href="./tools/cgpa.html" class="tool-card" data-category="calculators">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 3v18h18" />
+                      <path d="M7 15l4-4 3 3 5-6" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">07</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">CGPA Calculator</h3>
+                  <p class="tool-card-desc">Calculate cumulative GPA across semesters on 10.0 or 4.0 grading scales.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 08. Assignment Tracker -->
+            <a href="./tools/assignments.html" class="tool-card" data-category="planning">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 11l3 3L22 4" />
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">08</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Assignment Tracker</h3>
+                  <p class="tool-card-desc">Log homework deadlines by subject and monitor pending versus completed work.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 09. Word Counter -->
+            <a href="./tools/word-counter.html" class="tool-card" data-category="writing">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 6h16" />
+                      <path d="M4 12h12" />
+                      <path d="M4 18h8" />
+                      <path d="M18 15v6" />
+                      <path d="M15 18h6" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">09</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Word Counter</h3>
+                  <p class="tool-card-desc">Count words, characters with and without spaces, and sentences in real time.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+
+            <!-- 10. Notes Organizer -->
+            <a href="./tools/notes.html" class="tool-card" data-category="writing">
+              <div>
+                <div class="tool-card-top">
+                  <span class="tool-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="8" y1="13" x2="16" y2="13" />
+                      <line x1="8" y1="17" x2="13" y2="17" />
+                    </svg>
+                  </span>
+                  <span class="tool-index">10</span>
+                </div>
+                <div class="tool-card-body">
+                  <h3 class="tool-card-title">Notes Organizer</h3>
+                  <p class="tool-card-desc">Create, edit, search, and keep study notes stored safely in your browser.</p>
+                </div>
+              </div>
+              <div class="tool-card-footer">
+                <span>Open Tool</span>
+                <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY KRUX STUDY SECTION -->
+      <section id="why" class="section" aria-labelledby="why-heading">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-heading-group">
+              <h2 id="why-heading" class="section-title">Why KRUX STUDY</h2>
+              <p class="section-subtitle">
+                Engineered for speed, clarity, and uninterrupted academic focus.
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-item">
+              <span class="benefit-number">01.</span>
+              <h3 class="benefit-title">Simple and Easy to Use</h3>
+              <p class="benefit-text">
+                Every tool opens directly to a focused workspace with clear labels, instant feedback, and zero distractions.
+              </p>
+            </article>
+
+            <article class="benefit-item">
+              <span class="benefit-number">02.</span>
+              <h3 class="benefit-title">Fast and Lightweight</h3>
+              <p class="benefit-text">
+                Built purely with semantic HTML, clean CSS, and modular JavaScript so every page loads immediately on any device.
+              </p>
+            </article>
+
+            <article class="benefit-item">
+              <span class="benefit-number">03.</span>
+              <h3 class="benefit-title">Your Data Stays in Your Browser</h3>
+              <p class="benefit-text">
+                Plans, exams, assignments, and notes are saved privately in your browser's LocalStorage with no servers or tracking.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT & PRIVACY SECTION -->
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="container info-grid">
+          <article class="info-block">
+            <h2 id="about-heading">About KRUX STUDY</h2>
+            <p>
+              KRUX STUDY brings ten essential everyday academic utilities into one calm, high-contrast workspace designed for students across high school and university.
+            </p>
+            <p>
+              Instead of juggling bloated apps, login walls, and slow dashboards, every tool in KRUX STUDY runs locally in your browser so you can plan sessions, calculate grades, track attendance, and organize notes immediately.
+            </p>
+          </article>
+
+          <article id="privacy" class="info-block">
+            <h2>Privacy Policy</h2>
+            <p>
+              KRUX STUDY does not collect, transmit, or store any personal data on external servers. There are no accounts, no analytics trackers, and no third-party cookies.
+            </p>
+            <p>
+              All tasks, exams, GPA entries, assignments, and notes are stored strictly on your device using browser LocalStorage. You remain in complete control and can erase your saved data at any time.
+            </p>
+            <div class="storage-summary">
+              <div id="local-storage-stats" class="storage-stats"></div>
+              <div class="storage-actions">
+                <button type="button" id="clear-all-data-btn" class="btn btn-secondary btn-sm">
+                  Clear Saved Browser Data
+                </button>
+                <button type="button" id="cancel-clear-btn" class="btn btn-ghost btn-sm" hidden>
+                  Cancel
+                </button>
+              </div>
+              <div id="clear-data-feedback" class="inline-feedback" role="status" aria-live="polite"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="./index.html" class="brand">
+              <img
+                src="./assets/icons/logo.svg"
+                alt=""
+                width="26"
+                height="26"
+                class="brand-mark"
+                loading="lazy"
+              />
+              <span>KRUX <span class="brand-accent">STUDY</span></span>
+            </a>
+            <p class="footer-tagline">
+              Study Smart. Achieve More. Fast, private academic productivity tools built for everyday study workflows.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#tools">Explore Tools</a></li>
+              <li><a href="#why">Why KRUX STUDY</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Academic Tools</h3>
+            <ul class="footer-links footer-links--two-col">
+              <li><a href="./tools/planner.html">Study Planner</a></li>
+              <li><a href="./tools/timer.html">Focus Timer</a></li>
+              <li><a href="./tools/countdown.html">Exam Countdown</a></li>
+              <li><a href="./tools/grade.html">Grade Calculator</a></li>
+              <li><a href="./tools/percentage.html">Percentage Calculator</a></li>
+              <li><a href="./tools/attendance.html">Attendance Calculator</a></li>
+              <li><a href="./tools/cgpa.html">CGPA Calculator</a></li>
+              <li><a href="./tools/assignments.html">Assignment Tracker</a></li>
+              <li><a href="./tools/word-counter.html">Word Counter</a></li>
+              <li><a href="./tools/notes.html">Notes Organizer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 KRUX STUDY. All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#about">About Us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
